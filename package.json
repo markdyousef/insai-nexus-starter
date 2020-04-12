@@ -9,12 +9,15 @@
     "format": "npx prettier --write './**/*.{ts,md}'",
     "dev": "nexus dev",
     "build": "nexus build",
-    "start": "node node_modules/.build"
+    "start": "node node_modules/.build",
+    "generate": "prisma generate",
+    "studio": "prisma studio --experimental",
+    "migrate:up": "prisma migrate up --experimental",
+    "migrate:save": "prisma migrate save --experimental"
   },
   "prettier": {
     "semi": false,
-    "singleQuote": true,
-    "trailingComma": "all"
+    "singleQuote": true
   },
   "devDependencies": {
     "prettier": "^2.0.4"
